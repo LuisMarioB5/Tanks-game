@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 7458329a6b33bf24f958539edec9a7ba
+  productGUID: 7d62fea0cd629154c90c8b1a0ee2a1c8
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -874,14 +874,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Tanks
+  metroPackageName: Tanks-game
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Tanks
+  metroApplicationDescription: Tanks-game
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -955,7 +955,7 @@ PlayerSettings:
   cloudProjectId: fed855c6-a6d4-4524-b961-f5955ca6c5ff
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tanks
+  projectName: Uploading tanks
   organizationId: lbonilla5
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
