@@ -35,7 +35,7 @@ namespace Tanks.Complete
         private Rigidbody m_Rigidbody;              // Reference used to move the tank.
         private float m_MovementInputValue;         // The current value of the movement input.
         private float m_TurnInputValue;             // The current value of the turn input.
-        private Vector3 m_ExplosionForceValue;      // The current value of the force  applied on the tank from an explosion.
+        private Vector3 m_ExplosionForceValue;      // The current value of the force applied on the tank from an explosion.
         private float m_OriginalPitch;              // The pitch of the audio source at the start of the scene.
         private ParticleSystem[] m_particleSystems; // References to all the particles systems used by the Tanks
         
