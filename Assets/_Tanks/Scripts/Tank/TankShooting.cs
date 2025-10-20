@@ -149,6 +149,8 @@ namespace Tanks.Complete
         
         void HumanUpdate()
         {
+            m_AimSlider.gameObject.SetActive(false);
+
             // if there is a cooldown timer, decrement it
             if (m_ShotCooldownTimer > 0.0f)
             {
@@ -163,7 +165,8 @@ namespace Tanks.Complete
             {
                 // ... use the max force and launch the shell.
                 m_CurrentLaunchForce = m_MaxLaunchForce;
-                Fire ();
+                Fire();
+                m_AimSlider.gameObject.SetActive(false);
             }
             // Otherwise, if the fire button has just started being pressed...
             else if (m_ShotCooldownTimer <= 0 && fireAction.WasPressedThisFrame())
@@ -171,6 +174,8 @@ namespace Tanks.Complete
                 // ... reset the fired flag and reset the launch force.
                 m_Fired = false;
                 m_CurrentLaunchForce = m_MinLaunchForce;
+                
+                m_AimSlider.gameObject.SetActive(true);
 
                 // Change the clip to the charging clip and start it playing.
                 m_ShootingAudio.clip = m_ChargingClip;
@@ -183,12 +188,15 @@ namespace Tanks.Complete
                 m_CurrentLaunchForce += m_ChargeSpeed * Time.deltaTime;
 
                 m_AimSlider.value = m_CurrentLaunchForce;
+
+                m_AimSlider.gameObject.SetActive(true);
             }
             // Otherwise, if the fire button is released and the shell hasn't been launched yet...
             else if (fireAction.WasReleasedThisFrame() && !m_Fired)
             {
                 // ... launch the shell.
-                Fire ();
+                Fire();
+                m_AimSlider.gameObject.SetActive(false);
             }
         }
 
