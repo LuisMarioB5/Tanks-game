@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5876145021985917426}
   - component: {fileID: 3335078213377517767}
   - component: {fileID: 7095366358352244522}
+  - component: {fileID: 8653601443724318210}
   m_Layer: 9
   m_Name: Tank
   m_TagString: Untagged
@@ -352,6 +353,18 @@ MonoBehaviour:
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 3}
   m_HasShield: 0
+--- !u!114 &8653601443724318210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429983223911880600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc25b6c35f0ec7f43ad6f047f3623ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankAI
 --- !u!1 &5606091670075802580
 GameObject:
   m_ObjectHideFlags: 0
