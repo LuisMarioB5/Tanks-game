@@ -643,6 +643,10 @@ PrefabInstance:
       propertyPath: m_PlayerNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 299821391331295178, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
+      propertyPath: m_IsComputerControlled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2880869663236202438, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -778,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7790907642721797813, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
       propertyPath: m_IsComputerControlled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -793,6 +797,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074776477318419901, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
+      propertyPath: m_IsComputerControlled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3258800476585162161, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -864,6 +872,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 336150961532356749, guid: 6e4459392b4a2924383a2680c80df782, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256588433154545533, guid: 6e4459392b4a2924383a2680c80df782, type: 3}
+      propertyPath: m_IsComputerControlled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6702750360682432791, guid: 6e4459392b4a2924383a2680c80df782, type: 3}

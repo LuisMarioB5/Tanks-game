@@ -56,6 +56,12 @@ namespace Tanks.Complete
             m_Movement = GetComponent<TankMovement>();
             m_Shooting = GetComponent<TankShooting>();
 
+            if(m_Movement == null || !m_Movement.m_IsComputerControlled)
+            {
+                enabled = false;
+                return;
+            }
+
             // ensure that both movement and shooting script are set in "computer controlled" mode
             m_Movement.m_IsComputerControlled = true;
             m_Shooting.m_IsComputerControlled = true;
