@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 3335078213377517767, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_Shell
       value: 
-      objectReference: {fileID: 5409530, guid: 83fac0a80584c28479011941eea7d4f7, type: 3}
+      objectReference: {fileID: 6914211559835544016, guid: 451ad9462d550e74386381df09b22d4b, type: 3}
     - target: {fileID: 3335078213377517767, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_MaxDamage
       value: 90

@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: 3335078213377517767, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_Shell
       value: 
-      objectReference: {fileID: 5409530, guid: 1e59c2c82873bea41b373a92812dde2b, type: 3}
+      objectReference: {fileID: 2091168732073965564, guid: e5a8bd9a29975934a9adf57d90cfcaee, type: 3}
     - target: {fileID: 3335078213377517767, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_ExplosionForce
       value: 35
