@@ -213,7 +213,7 @@ MonoBehaviour:
   - {fileID: 1349084469}
   - {fileID: 1607311445}
   - {fileID: 332273249}
-  - {fileID: 0}
+  - {fileID: 1114482493}
 --- !u!4 &642724476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6069060053426874468, guid: 47992123b90daf74db2ddd1d52e6552a, type: 3}
@@ -483,6 +483,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &1114482493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5602520846255471321, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
+  m_PrefabInstance: {fileID: 1937203733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1129975508
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +768,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074776477318419901, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
+      propertyPath: m_IsComputerControlled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5602520846255471321, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.1
@@ -805,15 +814,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714792888363698272, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5714792888363698272, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9142049542383406039, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
       propertyPath: m_Name
       value: Tank - Fast
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142049542383406039, guid: 547d3d01b61b823469a225499c5b621c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -846,11 +859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5011512082920055319, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5011512082920055319, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5117027557490348206, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -896,6 +909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank - Heavy
       objectReference: {fileID: 0}
+    - target: {fileID: 8366676463492456864, guid: e4b7d88c71b513448a09c9c0ab38abf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -913,13 +930,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank - Shark
       objectReference: {fileID: 0}
-    - target: {fileID: 3295376404880120680, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 2029882240636590303, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3295376404880120680, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295376404880120680, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3401525851115399633, guid: f4a09b6edfd0c9148a95af1c44a339d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -992,7 +1013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3256588433154545533, guid: 6e4459392b4a2924383a2680c80df782, type: 3}
       propertyPath: m_IsComputerControlled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6702750360682432791, guid: 6e4459392b4a2924383a2680c80df782, type: 3}
       propertyPath: m_Name
