@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5876145021985917426}
   - component: {fileID: 3335078213377517767}
   - component: {fileID: 7095366358352244522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,9 +329,9 @@ MonoBehaviour:
   m_MaxLaunchForce: 30
   m_MaxChargeTime: 0.75
   m_ShotCooldown: 1
-  m_MaxDamage: 100
-  m_ExplosionForce: 1000
-  m_ExplosionRadius: 5
+  m_MaxDamage: 80
+  m_ExplosionForce: 30
+  m_ExplosionRadius: 3
   m_InputUser: {fileID: 0}
 --- !u!114 &7095366358352244522
 MonoBehaviour:
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8171198906009909534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5700132488237612606}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 8241455951465376254}
   - component: {fileID: 7174673162614880599}
   - component: {fileID: 8909682283537849031}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 8226913805661513571}
   - component: {fileID: 5514350779096502009}
   - component: {fileID: 1621622272891881553}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4745079273334355871}
   - component: {fileID: 7444155934604781572}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: AimSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,6 +697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DustTrail_Jungle_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 148586, guid: 38afd255d6ed746388b2f406bf3402a1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: 38afd255d6ed746388b2f406bf3402a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7
@@ -759,6 +763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 2502711481265462758, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3088847576401942210, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -766,6 +774,10 @@ PrefabInstance:
     - target: {fileID: 3088847576401942210, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066147126482045633, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7471019981129515232, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
       propertyPath: m_Pivot.x
@@ -847,6 +859,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8313935966057949721, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971489726698694703, guid: 1d30ac653c80f4afeba76b72f7111a7f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -890,6 +910,10 @@ PrefabInstance:
     - target: {fileID: 148586, guid: 38afd255d6ed746388b2f406bf3402a1, type: 3}
       propertyPath: m_Name
       value: DustTrail_Jungle_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 148586, guid: 38afd255d6ed746388b2f406bf3402a1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: 38afd255d6ed746388b2f406bf3402a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -989,6 +1013,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4606869947750833740, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2767421487434936234, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -2767421487434936234, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -998,12 +1030,24 @@ PrefabInstance:
       value: Tank_Alternative_Model
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4193184168706059673, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193184168706059673, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836970385329486131, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8836970385329486131, guid: 06cdc8d71bc5371408b340eb71884fd3, type: 3}
       propertyPath: m_IsActive
