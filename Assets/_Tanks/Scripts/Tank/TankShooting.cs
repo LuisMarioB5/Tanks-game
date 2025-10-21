@@ -120,6 +120,8 @@ namespace Tanks.Complete
 
         void ComputerUpdate()
         {
+            m_AimSlider.gameObject.SetActive(false);
+
             // The slider should have a default value of the minimum launch force.
             m_AimSlider.value = m_BaseMinLaunchForce;
 
@@ -128,21 +130,23 @@ namespace Tanks.Complete
             {
                 // ... use the max force and launch the shell.
                 m_CurrentLaunchForce = m_MaxLaunchForce;
-                Fire ();
+                Fire();
+                m_AimSlider.gameObject.SetActive(false);
             }
             // Otherwise, if the fire button is being held and the shell hasn't been launched yet...
             else if (m_IsCharging && !m_Fired)
             {
                 // Increment the launch force and update the slider.
                 m_CurrentLaunchForce += m_ChargeSpeed * Time.deltaTime;
-
+                m_AimSlider.gameObject.SetActive(true);
                 m_AimSlider.value = m_CurrentLaunchForce;
             }
             // Otherwise, if the fire button is released and the shell hasn't been launched yet...
             else if (fireAction.WasReleasedThisFrame() && !m_Fired)
             {
                 // ... launch the shell.
-                Fire ();
+                Fire();
+                m_AimSlider.gameObject.SetActive(false);
                 m_IsCharging = false;
             }
         }

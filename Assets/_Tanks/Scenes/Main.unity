@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164489036283040815, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164489036283040815, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1343825619265463958, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -181,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5876145021985917426, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_IsComputerControlled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8241455951465376254, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_AnchorMax.x
@@ -190,8 +198,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2429983223911880600, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1607311453}
   m_SourcePrefab: {fileID: 100100000, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+--- !u!1 &327971257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2429983223911880600, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+  m_PrefabInstance: {fileID: 240723221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &413090411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7422956501987788209, guid: 47992123b90daf74db2ddd1d52e6552a, type: 3}
+  m_PrefabInstance: {fileID: 1287416410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &413090416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413090411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: -1372625422
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1335
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.33333334
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: a2e537896cef6554d898185c0a782989, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &628849831
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +693,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6069060053426874468, guid: 47992123b90daf74db2ddd1d52e6552a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1149980612}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7422956501987788209, guid: 47992123b90daf74db2ddd1d52e6552a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413090416}
   m_SourcePrefab: {fileID: 100100000, guid: 47992123b90daf74db2ddd1d52e6552a, type: 3}
 --- !u!4 &1349084469 stripped
 Transform:
@@ -652,6 +708,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1343825619265463958, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
   m_PrefabInstance: {fileID: 240723221}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1607311453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327971257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc25b6c35f0ec7f43ad6f047f3623ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankAI
 --- !u!1001 &432479511462702504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -660,6 +728,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164489036283040815, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164489036283040815, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1343825619265463958, guid: 79e0e6a6222f79542aed0b593634dd12, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.35
