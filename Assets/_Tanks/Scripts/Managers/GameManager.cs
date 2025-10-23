@@ -50,6 +50,11 @@ namespace Tanks.Complete
         private int m_PlayerCount = 0;              // The number of players (2 to 4), decided from the number of PlayerData passed by the menu
         private TextMeshProUGUI m_TitleText;        // The text used to display game message. Automatically found as part of the Menu prefab
 
+        private float m_StartTime; //time when the game started, used for stats
+        private float m_EndTime;   //time when the game ended, used for stats
+        private float m_TotalTime; //total time of the game, used for stats
+        private float m_RoundTime; //time taken for each round, used for stats
+
         private void Start()
         {
             m_CurrentState = GameState.MainMenu;
@@ -79,13 +84,13 @@ namespace Tanks.Complete
         {
             // Create the delays so they only have to be made once.
             m_StartWait = new WaitForSeconds (m_StartDelay);
-            m_EndWait = new WaitForSeconds (m_EndDelay);
-
+            m_EndWait = new WaitForSeconds(m_EndDelay);
+            
             SpawnAllTanks();
             SetCameraTargets();
 
             // Once the tanks have been created and the camera is using them as targets, start the game.
-            StartCoroutine (GameLoop ());
+            StartCoroutine(GameLoop());
         }
 
         void ChangeGameState(GameState newState)
@@ -191,8 +196,8 @@ namespace Tanks.Complete
         {
             // As soon as the round starts reset the tanks and make sure they can't move.
             ResetAllTanks ();
-            DisableTankControl ();
-
+            DisableTankControl();
+            
             // Snap the camera's zoom and position to something appropriate for the reset tanks.
             m_CameraControl.SetStartPositionAndSize ();
 
@@ -208,7 +213,9 @@ namespace Tanks.Complete
         private IEnumerator RoundPlaying ()
         {
             // As soon as the round begins playing let the players control the tanks.
-            EnableTankControl ();
+            EnableTankControl();
+            
+            m_StartTime = Time.time;
 
             // Clear the text from the screen.
             m_TitleText.text = string.Empty;
@@ -219,6 +226,10 @@ namespace Tanks.Complete
                 // ... return on the next frame.
                 yield return null;
             }
+
+            m_EndTime = Time.time;
+            m_RoundTime = m_EndTime - m_StartTime;
+            m_TotalTime += m_RoundTime;
         }
 
 
@@ -309,20 +320,25 @@ namespace Tanks.Complete
 
             // If there is a winner then change the message to reflect that.
             if (m_RoundWinner != null)
-                message = m_RoundWinner.m_ColoredPlayerText + " WINS THE ROUND!";
+                // message = m_RoundWinner.m_ColoredPlayerText + " WINS THE ROUND!";
+                message = $"{m_GameWinner.m_ColoredPlayerText} WINS THE ROUND!\n";
 
             // Add some line breaks after the initial message.
-            message += "\n\n\n\n";
+            // message += "\n\n\n\n";
 
             // Go through all the tanks and add each of their scores to the message.
             for (int i = 0; i < m_PlayerCount; i++)
             {
                 message += m_SpawnPoints[i].m_ColoredPlayerText + ": " + m_SpawnPoints[i].m_Wins + " WINS\n";
             }
+                message += $"Total Time: {m_TotalTime:F2} seconds";
 
             // If there is a game winner, change the entire message to reflect that.
             if (m_GameWinner != null)
-                message = m_GameWinner.m_ColoredPlayerText + " WINS THE GAME!";
+                // message = m_GameWinner.m_ColoredPlayerText + " WINS THE GAME!";
+                message = $"{m_GameWinner.m_ColoredPlayerText} WINS THE GAME!\n";
+                message += $"Rounds Won: {m_GameWinner.m_Wins}\n";
+                message += $"Total Time: {m_TotalTime:F2} seconds";
 
             return message;
         }
